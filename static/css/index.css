@@ -1,0 +1,36 @@
+.button1 {
+  padding: 0px 10px;
+  border: 2px solid #b7e4f8;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  font-size: 30px;
+  transition: .3s;
+  z-index: 1;
+  font-family: Gabriola;
+  color: #6fc8f1;
+  border-radius: 50px;
+}
+
+.button1::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #b7e4f8;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.button1:hover::before {
+  width: 105%;
+}
+
+.button1:hover {
+  color: #111;
+}
