@@ -1,8 +1,208 @@
 {% extends 'index.html' %}
+{% load static %}
 {% block title %}
     <title>Vishwajit Patil Portfolio</title>
 {% endblock %}
 
 {% block content %}
-    <h1> Hello, How Are You! </h1>
-{% endblock %}
+
+    <section id="short_intro" style="display: flex; justify-content: space-between; align-items: center; padding: 5px 80px;">
+        <div id="my_img" style="z-index: -1;">
+            <img src="{% static 'images/my_img.png' %}" width="565" height="625" alt="my_img" >
+        </div>
+        <div>
+            <p style="font-family: 'Gabriola'; font-size: 50px; line-height: 55px;">
+                Hey, i'm <strong style="color: #6fc8f1;">Vishwajit Patil</strong><br>
+                a python full-stack developer from pune </p>
+            <p style="font-family: 'Gabriola'; font-size: 30px; margin-top: -15px;">
+                trying to cause a positive impact through technology.</p>
+            <a href="#">
+                <button class="button1" style="margin-left: 20px; margin-top: 20px;" > Hire Me </button>
+            </a>
+            <button class="button1" id="downloadCvBtn" style="margin-left: 20px; margin-top: 20px;">Download CV</button>
+        </div>
+    </section>
+
+    <section id="highlight_card">
+        <div class="stats-container">
+            <div class="stat-item">
+                <p class="stat-value">10+</p>
+                <p class="stat-label">Projects Development from scratch</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">2+</p>
+                <p class="stat-label">Projects Live Hosted</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">96%</p>
+                <p class="stat-label">Positive Feedback on Projects</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-value">10+</p>
+                <p class="stat-label">Professional Certifications</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--
+    <section id="employment_status">
+        <div style="position: fixed; top: 105px; right: 10px; z-index: 100;">
+            <button class="cssbuttons-io-button" onmouseover="showDropdowns()" onmouseout="hideDropdowns()">
+                <strong>Employment Status</strong>
+                <div class="icon">
+                    <span class="icon-default" style="border:2px solid #00d26a; height: 50px; font-size: 35px; border-radius: 1em; padding-top: 4.3px; padding-left: 1px; background: white;">✅</span>
+                    <p class="status-text" style="font-size: 26px; padding-top: 13px;">Open to Full-Time Opportunities</p>
+                </div>
+            </button>
+            <div id="myDropdowns" style=" margin-left:-490px; margin-top:-162px; display: none; position: absolute; background-color: #FFFEFA; max-width: 800px; z-index: 1; padding: 15px; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); border-radius: 5px;">
+                 <p style="text-align: justify;">Searching for a role in a respected organization that offers opportunities for professional development, career advancement, and knowledge growth</p>
+            </div>
+        </div>
+    </section>
+-->
+
+
+
+
+    <section id="introduction">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>About Me</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3" style="font-size: 24px; font-family: Gabriola; text-align: justify;">
+            <p>I'm a full-stack developer passionate about turning ideas into interactive digital experiences.
+                With a foundation in computer science and a growing love for clean, scalable code, I enjoy building
+                modern web applications that blend functionality with great user experience. My journey started with
+                a Bachelor's degree in Computer Science and grew stronger through a deep dive into Python Full Stack
+                Development.</p>
+
+            <p>As a developer, I approach every project with a strong emphasis on structure, clarity, and purposeful
+                design. I believe in creating digital solutions that not only meet requirements but also exceed expectations
+                in usability and performance. My development process is driven by precision and thoughtful iteration —
+                translating concepts into efficient, reliable, and intuitive user experiences. I strive to balance innovation
+                with practicality, ensuring that every product I contribute to is built on a strong architectural foundation
+                and refined through attention to detail. I am deeply committed to professional growth and continuous learning. In an industry that evolves rapidly,
+                I make it a priority to stay informed, adapt quickly, and apply best practices across every stage of
+                development. I view technology as a tool for meaningful impact — whether through improved accessibility,
+                streamlined workflows, or engaging user interfaces. With each opportunity, I aim to contribute value, foster
+                collaboration, and uphold high standards in everything I build.</p>
+
+            <p>Feel free to explore my portfolio to see the kind of work I’ve been involved in and the skills I bring to
+                each project. I'm always open to connecting with like-minded individuals, creative teams, and forward-thinking
+                organizations. Whether you're looking to collaborate, hire, or simply exchange ideas — let’s connect and
+                create something exceptional together.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>Technologies and Skills</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live_projects">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>Live Projects</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all_projects">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>All Projects</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>Academic Details</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-title">
+                    <h2><span>Certifications</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="contact_me">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h2><span>Contact Me</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: -20px;">
+                <div class="col-md-5">
+                    <div class="contact-box contact-info mb-4">
+                        <h5><span class="icon-line">|</span> Email</h5>
+                        <p>vishwajit22patil@gmail.com</p>
+
+                        <h5 class="mt-4"><span class="icon-line">|</span>Linkedin</h5>
+                        <p>linkedin.com/in/vishwajitpatil-pythondev</p>
+
+                        <h5 class="mt-4"><span class="icon-line">|</span>GitHub</h5>
+                        <p>github.com/VishwajitPatil<span style="font-family: Calibri Light; font-size: 18px;">0822</span></p>
+
+                        <h5 class="mt-4"><span class="icon-line">|</span> WhatsApp / Contact</h5>
+                        <p style="font-family: Calibri Light; font-size: 18px;">+91 8080847696 </p>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="contact-box">
+                        <h5><span class="icon-line">|</span> Get In Touch</h5>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Name *" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email *" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Your message *" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-custom">Contact Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

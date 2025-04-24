@@ -1,5 +1,11 @@
+body {
+  background: linear-gradient(315deg,rgba(247, 247, 247, 1) 55%, rgba(142, 213, 254, 0.65) 100%);
+
+}
+
 .button1 {
   padding: 0px 10px;
+  width: 180px;
   border: 2px solid #b7e4f8;
   position: relative;
   overflow: hidden;

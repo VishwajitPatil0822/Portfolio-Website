@@ -1,0 +1,235 @@
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111827;
+  border-radius: 20px;
+  margin-top: -3px;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0.75rem;
+}
+
+.stat-value {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fbbf24;
+}
+
+.stat-label {
+  font-size: 20px;
+  font-family: Gabriola;
+  color: #f3f4f6;
+  margin-top: -20px;
+  line-height: 1.4;
+}
+
+.contact-box {
+  background: white;
+  height: 380px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact-box h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: Gabriola;
+}
+
+.icon-line {
+  color: #6fc8f1;
+  margin-right: 8px;
+}
+
+.contact-info p {
+  font-family: Gabriola;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: -10px;
+  color: #555;
+
+}
+
+.form-control {
+  font-family: Gabriola;
+  border-radius: 6px;
+  border: 1px solid #b7e4f8;
+}
+
+.btn-custom {
+  padding: 2px 10px;
+  width: 140px;
+  border: 2px solid #b7e4f8;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  transition: .3s;
+  z-index: 1;
+  font-family: Gabriola, cursive;
+  color: #6fc8f1;
+  border-radius: 10px;
+}
+
+.btn-custom::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #b7e4f8;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.btn-custom:hover::before {
+  width: 105%;
+}
+
+.btn-custom:hover {
+  color: #111;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+
+.section-title {
+  margin-bottom: 40px;
+ }
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  color: #292929;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.section-title h2 {
+  font-family: Gabriola;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+
+.section-title h2 span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-title h2 span:before, .section-title h2 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 35px;
+  height: 3px;
+  background: #6fc8f1;
+}
+
+.section-title h2 span:before {
+  right: -50px;
+}
+
+.section-title h2 span:after {
+  left: -50px;
+}
+
+.cssbuttons-io-button {
+  background: white;
+  color: black;
+  font-family: Gabriola;
+  padding: 0.5em 2.5em 0.5em 3.5em;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 2em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  height: 2.8em;
+  width: 15em;
+  cursor: pointer;
+  border: 1px solid #6fc8f1;;
+}
+
+.cssbuttons-io-button .icon {
+  background: #7CFC00;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 1.8em;
+  right: 0.3em;
+  transition: all 0.7s;
+}
+
+.icon-default {
+  display: block;
+  color: green;
+  z-index: 1;
+}
+
+.status-text {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+  justify-content: center;
+}
+
+.cssbuttons-io-button:hover .icon-default {
+  display: none;
+}
+
+.cssbuttons-io-button:hover .status-text {
+  display: block;
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.icon-default.hidden {
+  display: none;
+}
