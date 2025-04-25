@@ -6,6 +6,24 @@
 
 {% block content %}
 
+    <section id="short_intro">
+        <div id="my_img">
+            <img src="{% static 'images/my_img.png' %}" width="565" height="625" alt="my_img">
+        </div>
+        <div>
+            <p id="intro_title">
+                Hey, I'm <strong style="color: #6fc8f1;">Vishwajit Patil</strong><br>
+                a Python full-stack developer from Pune
+            </p>
+            <p id="intro_subtitle">
+                Trying to cause a positive impact through technology.
+            </p>
+            <button id="hire_me_btn" class="button1" onclick="scrollToSection('contact_me')">Hire Me</button>
+            <button id="download_cv_btn" class="button1">Download CV</button>
+        </div>
+    </section>
+
+    <!--
     <section id="short_intro" style="display: flex; justify-content: space-between; align-items: center; padding: 5px 80px;">
         <div id="my_img" style="z-index: -1;">
             <img src="{% static 'images/my_img.png' %}" width="558" height="625" alt="my_img" >
@@ -20,6 +38,7 @@
             <button class="button1" id="downloadCvBtn" style="margin-left: 20px; margin-top: 20px;">Download CV</button>
         </div>
     </section>
+    -->
 
     <section id="highlight_card">
         <div class="stats-container">
