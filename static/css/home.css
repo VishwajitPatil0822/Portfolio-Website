@@ -1,3 +1,43 @@
+#short_intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+}
+
+#my_img {
+    z-index: -1;
+}
+
+#intro_title {
+    font-family: 'Gabriola';
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#intro_subtitle {
+    font-family: 'Gabriola';
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+.button1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#hire_me_btn {
+    background-color: #4CAF50; /* Example color */
+}
+
+#download_cv_btn {
+    background-color: #008CBA; /* Example color */
+}
+
+
+
+
+
 .stats-container {
   display: flex;
   justify-content: space-between;
