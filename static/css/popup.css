@@ -1,0 +1,77 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.popup {
+  width: 400px;
+  min-height: 250px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 9999;
+  text-align: center;
+}
+
+.PopupHeading {
+  font-size: 1.4em;
+  margin-top: -20px;
+  color: #222;
+  font-weight: 700;
+}
+
+.PopupSubheading {
+  font-size: 0.95em;
+  margin-top: 5px;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+.exitBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 3px;
+}
+
+.exitBtn:focus {
+  outline: none;
+}
+
+.PopupSignatureBox {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  text-align: right;
+}
+
+.PopupSignature {
+  font-size: 0.85em;
+  color: #555;
+  font-style: italic;
+  line-height: 1.3;
+}

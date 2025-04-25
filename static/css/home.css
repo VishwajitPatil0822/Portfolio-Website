@@ -158,10 +158,9 @@ textarea.form-control {
 .cssbuttons-io-button {
   background: white;
   color: black;
-  font-family: Gabriola;
   padding: 0.5em 2.5em 0.5em 3.5em;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 300;
   border-radius: 2em;
   border: none;
   letter-spacing: 0.05em;
@@ -169,8 +168,8 @@ textarea.form-control {
   overflow: hidden;
   align-items: center;
   position: relative;
-  height: 2.8em;
-  width: 15em;
+  height: 3.2em;
+  width: 230px;
   cursor: pointer;
   border: 1px solid #6fc8f1;;
 }
@@ -181,10 +180,10 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.2em;
+  height: 2.5em;
   width: 2.2em;
   border-radius: 1.8em;
-  right: 0.3em;
+  right: 0.5em;
   transition: all 0.7s;
 }
 
@@ -204,7 +203,7 @@ textarea.form-control {
 }
 
 .cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
+  width: calc(100% - 0.9em);
   justify-content: center;
 }
 
@@ -233,3 +232,137 @@ textarea.form-control {
 .icon-default.hidden {
   display: none;
 }
+
+.card-custom {
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.img-container {
+    background: linear-gradient(to right, #bfdbfe, #ffffff);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-custom {
+  padding: 2px 10px;
+  width: 160px;
+  border: 2px solid #b7e4f8;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  font-size: 24px;
+  transition: .3s;
+  z-index: 1;
+  font-family: Gabriola, cursive;
+  color: #6fc8f1;
+  border-radius: 10px;
+}
+
+.btn-custom::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #b7e4f8;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.btn-custom:hover::before {
+  width: 105%;
+}
+
+.btn-custom:hover {
+  color: #111;
+}
+
+.blog-card {
+  display: flex;
+  max-width: 551px;
+  min-width: 550px;
+  min-height: 200px;
+  background: linear-gradient(315deg,rgba(247, 247, 247, 1) 55%, rgba(142, 213, 254, 0.65) 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.blog-card1 {
+  display: flex;
+  max-width: 450px;
+  min-width: 350px;
+  min-height: 100px;
+  background: linear-gradient(315deg,rgba(247, 247, 247, 1) 55%, rgba(142, 213, 254, 0.65) 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.blog-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(350deg,rgba(247, 247, 247, 1) 55%, rgba(142, 213, 254, 0.65) 100%);
+  width: 60px;
+  padding: 10px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog-date span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 1px;
+}
+
+.date-separator {
+  width: 1px;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.blog-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.blog-description {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
