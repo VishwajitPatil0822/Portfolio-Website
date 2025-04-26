@@ -19,7 +19,7 @@ body {
   font-size: 30px;
   transition: .3s;
   z-index: 1;
-  font-family: Gabriola;
+  font-family: Gabriola, sans-serif !important;
   color: #6fc8f1;
   border-radius: 50px;
 }
