@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Gabriola';
+    src: url('/static/fonts/Gabriola.ttf') format('truetype');
+}
+
 body {
   background: linear-gradient(315deg,rgba(247, 247, 247, 1) 55%, rgba(142, 213, 254, 0.65) 100%);
 
