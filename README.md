@@ -61,8 +61,6 @@ Deployed globally using Vercel, the website ensures fast loading speeds, high av
 
 ## Screenshots
 
-**1. Home Page** 
-
 ![Home Page](screenshots/home.png)
 
 <br>
