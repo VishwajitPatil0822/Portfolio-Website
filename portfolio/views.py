@@ -1,21 +1,18 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import redirect, render
 from .models import Contact
 
+
 def home_view(request):
-    template_name = 'portfolio/home.html'
+    template_name = "portfolio/home.html"
 
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        message = request.POST.get('message')
+    if request.method == "POST":
+        Contact.objects.create(
+            name=request.POST.get("name"),
+            email=request.POST.get("email"),
+            subject=request.POST.get("subject"),
+            message=request.POST.get("message"))
+        request.session["show_popup"] = True
+        return redirect("home_view_urls")
 
-        contact = Contact(name=name, email=email, subject=subject, message=message)
-        contact.save()
-
-        request.session['show_popup'] = True
-        return redirect('home_view_urls')
-
-    show_popup = request.session.pop('show_popup', False)
-    context = {'show_popup': show_popup}
-    return render(request, template_name, context)
+    show_popup = request.session.pop("show_popup",False)
+    return render(request,template_name,{"show_popup": show_popup})
